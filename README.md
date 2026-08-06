@@ -1,6 +1,6 @@
 # Reserve Bank of New Zealand Exchange Rate API client
 
-Official **Reserve Bank of New Zealand** (New Zealand) daily exchange rates in Node.js / TypeScript — 18 currencies against the NZD, with history back to 2018. Zero dependencies, works in Node 18+, Bun, Deno, and edge runtimes (uses global `fetch`).
+Official **Reserve Bank of New Zealand** (New Zealand) daily exchange rates in Node.js / TypeScript — 18 currencies against the NZD, with history back to 1999. Zero dependencies, works in Node 18+, Bun, Deno, and edge runtimes (uses global `fetch`).
 
 These are the *published central bank rates* required for tax filings, customs valuations, audits, and compliant invoicing — not moving market rates. Every response carries the bank's own publication date.
 
