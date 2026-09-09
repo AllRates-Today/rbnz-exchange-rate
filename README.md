@@ -70,10 +70,10 @@ const pair = await getRate('NZD', 'USD', { apiKey: 'art_live_...' });
 {
   bank: 'rbnz',
   name: 'Reserve Bank of New Zealand',
-  rate_date: '2026-08-11',   // Reserve Bank of New Zealand's own publication date
+  rate_date: '2026-09-09',   // Reserve Bank of New Zealand's own publication date
   source: 'NZD',
   target: 'USD',
-  rate: 0.58885,
+  rate: 0.58605,
   rate_type: 'reference',
   derived: false,
   method: 'published',
@@ -98,9 +98,9 @@ console.log(table.rate_date, table.rates.length);
 {
   bank: 'rbnz',
   name: 'Reserve Bank of New Zealand',
-  rate_date: '2026-08-11',
+  rate_date: '2026-09-09',
   rates: [
-    { "base": "NZD", "quote": "USD", "type": "reference", "value": 0.58885 },
+    { "base": "NZD", "quote": "USD", "type": "reference", "value": 0.58605 },
     // … the rest of the published table (17 currencies vs NZD)
   ],
   disclaimer: '…'
@@ -140,7 +140,7 @@ Paid plans. One resolved rate per publication date — ready for charting, reval
 import { getHistory } from 'rbnz-exchange-rate';
 
 const series = await getHistory(
-  { source: 'NZD', target: 'USD', from: '2026-01-01', to: '2026-08-11' },
+  { source: 'NZD', target: 'USD', from: '2026-01-01', to: '2026-09-09' },
   { apiKey: 'art_live_...' }
 );
 ```
@@ -153,11 +153,11 @@ const series = await getHistory(
   source: 'NZD',
   target: 'USD',
   from: '2026-01-01',
-  to: '2026-08-11',
+  to: '2026-09-09',
   count: 152,
   rates: [
     // one entry per publication date
-    { date: '2026-08-11', rate: 0.58885, rate_type: 'reference', derived: false, method: 'published' },
+    { date: '2026-09-09', rate: 0.58605, rate_type: 'reference', derived: false, method: 'published' },
     // …
   ],
   disclaimer: '…'
@@ -170,9 +170,9 @@ Pass `{ symbol: 'USD' }` instead of `source`/`target` to get the raw published r
 
 ## 🗺️ Currencies covered
 
-Reserve Bank of New Zealand currently publishes rates covering **18 currencies** (as of the latest table):
+Reserve Bank of New Zealand currently publishes rates covering **17 currencies** against the NZD (as of the latest table):
 
-`AUD` · `CAD` · `CNY` · `EUR` · `GBP` · `HKD` · `IDR` · `INR` · `JPY` · `KRW` · `MYR` · `NZD` · `PHP` · `SGD` · `THB` · `TWD` · `USD` · `VND`
+🇦🇺 `AUD` · 🇨🇦 `CAD` · 🇨🇳 `CNY` · 🇪🇺 `EUR` · 🇬🇧 `GBP` · 🇭🇰 `HKD` · 🇮🇩 `IDR` · 🇮🇳 `INR` · 🇯🇵 `JPY` · 🇰🇷 `KRW` · 🇲🇾 `MYR` · 🇵🇭 `PHP` · 🇸🇬 `SGD` · 🇹🇭 `THB` · 🇹🇼 `TWD` · 🇺🇸 `USD` · 🇻🇳 `VND`
 
 ## ⚖️ Published vs derived rates
 
@@ -235,6 +235,14 @@ getRate('NZD', 'USD', { apiKey: 'art_live_...' }).then((pair) => console.log(pai
 | `getLatestRates({ apiKey })` | Free | The central bank's full latest published table |
 | `getRatesForDate(date, { apiKey, source?, target? })` | Paid | The official table (or one pair) for a YYYY-MM-DD date |
 | `getHistory({ symbol \| source+target, from?, to? }, { apiKey })` | Paid | Daily series since 1999 |
+
+## 📥 Bulk data (no key)
+
+Need the whole archive rather than an API call? The same published tables are mirrored daily as open data:
+
+- Hugging Face: [AllRates/central-bank-exchange-rates](https://huggingface.co/datasets/AllRates/central-bank-exchange-rates) — one CSV per institution (`rates/rbnz.csv`)
+- Kaggle: [allratestoday/central-bank-exchange-rates](https://www.kaggle.com/datasets/allratestoday/central-bank-exchange-rates)
+- CDN JSON: `https://cdn.jsdelivr.net/gh/AllRates-Today/central-bank-exchange-rates@main/data/rbnz/latest.json`
 
 ## 🔗 Links
 
