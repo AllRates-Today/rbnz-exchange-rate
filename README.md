@@ -4,6 +4,8 @@
 [![license](https://img.shields.io/npm/l/rbnz-exchange-rate.svg)](https://github.com/AllRates-Today/rbnz-exchange-rate/blob/main/LICENSE)
 [![zero dependencies](https://img.shields.io/badge/dependencies-0-brightgreen.svg)](https://www.npmjs.com/package/rbnz-exchange-rate)
 [![TypeScript](https://img.shields.io/badge/TypeScript-types%20included-3178C6.svg)](https://www.typescriptlang.org/)
+[![NZD/USD today](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fallratestoday.com%2Fapi%2Fopen%2Fcentral-bank%2Frbnz%3Fsource%3DNZD%26target%3DUSD&query=%24.rate&label=NZD%2FUSD%20published%20by%20Reserve%20Bank%20of%20New%20Zealand&color=0A7E8C&cacheSeconds=3600)](https://allratestoday.com/central-bank-rates-api/rbnz/)
+[![rate date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fallratestoday.com%2Fapi%2Fopen%2Fcentral-bank%2Frbnz%3Fsource%3DNZD%26target%3DUSD&query=%24.rate_date&label=rate%20date&color=555&cacheSeconds=3600)](https://allratestoday.com/central-bank-rates-api/rbnz/)
 
 **Official Reserve Bank of New Zealand (New Zealand) daily exchange rates for Node.js and TypeScript. The published central bank rates behind tax filings, customs valuations, audits, and compliant invoicing — not market estimates, but the numbers Reserve Bank of New Zealand itself prints, every business day.**
 
@@ -32,6 +34,36 @@ console.log(r.rate_date, r.rates.length); // the central bank's latest published
 ```
 
 The open endpoint serves the *latest* table only and asks for a visible attribution link. The client below uses the keyed API, which adds point-in-time tables, history, and CSV/XML/Excel output.
+
+## 📈 Latest published table
+
+Today's full Reserve Bank of New Zealand table, straight from the central bank's latest publication. On GitHub it is refreshed by [a daily Action](.github/workflows/daily-table.yml) that reads the keyless endpoint above and commits only when the central bank publishes a new table; the copy on npm is as of the package's publish date.
+
+<!-- daily-table:start -->
+Published **2026-10-06** by Reserve Bank of New Zealand — 17 rates. Updated 2026-10-08.
+
+| Base | Quote | Type | Rate |
+| --- | --- | --- | ---: |
+| NZD | AUD | reference | 0.8036 |
+| NZD | CAD | reference | 0.7989 |
+| NZD | CNY | reference | 3.7557 |
+| NZD | EUR | reference | 0.499 |
+| NZD | GBP | reference | 0.4236 |
+| NZD | HKD | reference | 4.3954 |
+| NZD | IDR | reference | 10025.791 |
+| NZD | INR | reference | 53.93765 |
+| NZD | JPY | reference | 88.4314 |
+| NZD | KRW | reference | 752.15835 |
+| NZD | MYR | reference | 2.28815 |
+| NZD | PHP | reference | 35.08745 |
+| NZD | SGD | reference | 0.71655 |
+| NZD | THB | reference | 18.86275 |
+| NZD | TWD | reference | 17.78795 |
+| NZD | USD | reference | 0.5601 |
+| NZD | VND | reference | 14564.2807 |
+
+Source: [Official rates published by RBNZ, served by AllRatesToday](https://allratestoday.com/central-bank-rates-api/rbnz/). Rates are as printed by the central bank; AllRatesToday is not affiliated with it.
+<!-- daily-table:end -->
 
 ## 🔑 Get your API key
 
