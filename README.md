@@ -47,27 +47,27 @@ The image is rendered live from the keyless endpoint above, so it follows the ce
 
 <!-- daily-table:start -->
 <details>
-<summary>Table as text: published 2026-10-28 by Reserve Bank of New Zealand — 17 rates. Updated 2026-10-28.</summary>
+<summary>Table as text: published 2026-10-29 by Reserve Bank of New Zealand — 17 rates. Updated 2026-10-29.</summary>
 
 | Base | Quote | Type | Rate |
 | --- | --- | --- | ---: |
-| NZD | AUD | reference | 0.79705 |
-| NZD | CAD | reference | 0.78825 |
-| NZD | CNY | reference | 3.73975 |
-| NZD | EUR | reference | 0.50425 |
-| NZD | GBP | reference | 0.42165 |
-| NZD | HKD | reference | 4.39945 |
-| NZD | IDR | reference | 10179.42875 |
-| NZD | INR | reference | 53.35015 |
-| NZD | JPY | reference | 88.52735 |
-| NZD | KRW | reference | 747.27665 |
-| NZD | MYR | reference | 2.29105 |
-| NZD | PHP | reference | 35.97295 |
-| NZD | SGD | reference | 0.7187 |
-| NZD | THB | reference | 18.9525 |
-| NZD | TWD | reference | 18.21415 |
-| NZD | USD | reference | 0.56085 |
-| NZD | VND | reference | 14488.9994 |
+| NZD | AUD | reference | 0.7975 |
+| NZD | CAD | reference | 0.78685 |
+| NZD | CNY | reference | 3.7491 |
+| NZD | EUR | reference | 0.5049 |
+| NZD | GBP | reference | 0.42235 |
+| NZD | HKD | reference | 4.4115 |
+| NZD | IDR | reference | 10223.52425 |
+| NZD | INR | reference | 53.55185 |
+| NZD | JPY | reference | 88.83165 |
+| NZD | KRW | reference | 750.79355 |
+| NZD | MYR | reference | 2.29155 |
+| NZD | PHP | reference | 35.9229 |
+| NZD | SGD | reference | 0.72085 |
+| NZD | THB | reference | 18.96945 |
+| NZD | TWD | reference | 18.2336 |
+| NZD | USD | reference | 0.56235 |
+| NZD | VND | reference | 14540.4039 |
 
 </details>
 
@@ -232,6 +232,7 @@ The Reserve Bank of New Zealand publishes daily wholesale exchange rates for the
 
 - Publisher's own page: [B1 — exchange rates and TWI](https://www.rbnz.govt.nz/statistics/series/exchange-and-interest-rates/exchange-rates-and-the-trade-weighted-index) · [www.rbnz.govt.nz](https://www.rbnz.govt.nz)
 - Publication: every business day; the exact schedule, freshness status and any current delay are on the [Reserve Bank of New Zealand rates page](https://allratestoday.com/central-bank-rates-api/rbnz/)
+- In the API: usually by **10:25 UTC** (measured over the last 10 publications). Schedule a sync at or after that time and retry hourly until `rate_date` moves; every response carries the same figure as `available_by_utc` — see [when to poll](https://allratestoday.com/docs/#when-to-poll)
 - Values are stored unmodified, with the publisher's own `rate_date` on every row — see the [methodology](https://allratestoday.com/official-rates-methodology/)
 
 ## 🧭 Reading the numbers
