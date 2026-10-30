@@ -24,50 +24,35 @@
 
 Get a free API key at [allratestoday.com/register](https://allratestoday.com/register) — no credit card required. Latest rates are on every plan, including free.
 
-## ⚡ Try it without a key
-
-The latest Reserve Bank of New Zealand table is also served keyless, CORS-open and edge-cached, for evaluation, embeds and AI agents:
-
-```bash
-curl "https://allratestoday.com/api/open/central-bank/rbnz?source=NZD&target=USD"
-```
-
-```js
-const r = await fetch('https://allratestoday.com/api/open/central-bank/rbnz').then((x) => x.json());
-console.log(r.rate_date, r.rates.length); // the central bank's latest published table, no key
-```
-
-The open endpoint serves the *latest* table only (JSON by default; add `?format=csv`, `xml` or `xlsx` for a file) and is free to use with a visible, followable link where the rates are shown: `<a href="https://allratestoday.com">Exchange rates by AllRatesToday</a>` (terms: <https://allratestoday.com/terms/#attribution>). The client below uses the keyed API, which adds point-in-time tables and history; with a key the link is appreciated, not required.
-
 ## 📈 Latest published table
 
 [![Latest Reserve Bank of New Zealand table](https://allratestoday.com/api/open/central-bank/rbnz/table.svg)](https://allratestoday.com/central-bank-rates-api/rbnz/)
 
-The image is rendered live from the keyless endpoint above, so it follows the central bank's publications on npm and on GitHub alike without a new release. The same table as text is folded below for search and copy-paste: on GitHub [a daily Action](.github/workflows/daily-table.yml) refreshes it whenever the central bank publishes a new table; on npm it is as of the package's publish date.
+The image is rendered live from the keyless endpoint, so it follows the central bank's publications on npm and on GitHub alike without a new release. The same table as text is folded below for search and copy-paste: on GitHub [a daily Action](.github/workflows/daily-table.yml) refreshes it whenever the central bank publishes a new table; on npm it is as of the package's publish date.
 
 <!-- daily-table:start -->
 <details>
-<summary>Table as text: published 2026-10-29 by Reserve Bank of New Zealand — 17 rates. Updated 2026-10-29.</summary>
+<summary>Table as text: published 2026-10-30 by Reserve Bank of New Zealand — 17 rates. Updated 2026-10-30.</summary>
 
 | Base | Quote | Type | Rate |
 | --- | --- | --- | ---: |
-| NZD | AUD | reference | 0.7975 |
-| NZD | CAD | reference | 0.78685 |
-| NZD | CNY | reference | 3.7491 |
-| NZD | EUR | reference | 0.5049 |
-| NZD | GBP | reference | 0.42235 |
-| NZD | HKD | reference | 4.4115 |
-| NZD | IDR | reference | 10223.52425 |
-| NZD | INR | reference | 53.55185 |
-| NZD | JPY | reference | 88.83165 |
-| NZD | KRW | reference | 750.79355 |
-| NZD | MYR | reference | 2.29155 |
-| NZD | PHP | reference | 35.9229 |
-| NZD | SGD | reference | 0.72085 |
-| NZD | THB | reference | 18.96945 |
-| NZD | TWD | reference | 18.2336 |
-| NZD | USD | reference | 0.56235 |
-| NZD | VND | reference | 14540.4039 |
+| NZD | AUD | reference | 0.80125 |
+| NZD | CAD | reference | 0.78635 |
+| NZD | CNY | reference | 3.74975 |
+| NZD | EUR | reference | 0.50265 |
+| NZD | GBP | reference | 0.42015 |
+| NZD | HKD | reference | 4.4151 |
+| NZD | IDR | reference | 10204.47175 |
+| NZD | INR | reference | 53.61495 |
+| NZD | JPY | reference | 88.5785 |
+| NZD | KRW | reference | 753.5999 |
+| NZD | MYR | reference | 2.277 |
+| NZD | PHP | reference | 35.81975 |
+| NZD | SGD | reference | 0.71965 |
+| NZD | THB | reference | 18.97085 |
+| NZD | TWD | reference | 18.3399 |
+| NZD | USD | reference | 0.56285 |
+| NZD | VND | reference | 14538.97885 |
 
 </details>
 
