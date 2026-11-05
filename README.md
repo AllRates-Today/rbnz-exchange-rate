@@ -32,27 +32,27 @@ The image is rendered live from the keyless endpoint, so it follows the central 
 
 <!-- daily-table:start -->
 <details>
-<summary>Table as text: published 2026-11-04 by Reserve Bank of New Zealand — 17 rates. Updated 2026-11-04.</summary>
+<summary>Table as text: published 2026-11-05 by Reserve Bank of New Zealand — 17 rates. Updated 2026-11-05.</summary>
 
 | Base | Quote | Type | Rate |
 | --- | --- | --- | ---: |
-| NZD | AUD | reference | 0.8022 |
-| NZD | CAD | reference | 0.78265 |
-| NZD | CNY | reference | 3.73325 |
-| NZD | EUR | reference | 0.4985 |
-| NZD | GBP | reference | 0.41615 |
-| NZD | HKD | reference | 4.3876 |
-| NZD | IDR | reference | 10143.8895 |
-| NZD | INR | reference | 52.9856 |
-| NZD | JPY | reference | 88.62205 |
-| NZD | KRW | reference | 751.95635 |
-| NZD | MYR | reference | 2.2765 |
-| NZD | PHP | reference | 35.55115 |
-| NZD | SGD | reference | 0.71615 |
-| NZD | THB | reference | 18.8744 |
-| NZD | TWD | reference | 18.36695 |
-| NZD | USD | reference | 0.5592 |
-| NZD | VND | reference | 14408.3487 |
+| NZD | AUD | reference | 0.8033 |
+| NZD | CAD | reference | 0.7867 |
+| NZD | CNY | reference | 3.76285 |
+| NZD | EUR | reference | 0.50105 |
+| NZD | GBP | reference | 0.41785 |
+| NZD | HKD | reference | 4.42115 |
+| NZD | IDR | reference | 10234.06925 |
+| NZD | INR | reference | 53.3386 |
+| NZD | JPY | reference | 89.117 |
+| NZD | KRW | reference | 754.2836 |
+| NZD | MYR | reference | 2.28405 |
+| NZD | PHP | reference | 35.6868 |
+| NZD | SGD | reference | 0.7199 |
+| NZD | THB | reference | 18.8874 |
+| NZD | TWD | reference | 18.5253 |
+| NZD | USD | reference | 0.56355 |
+| NZD | VND | reference | 14485.77235 |
 
 </details>
 
