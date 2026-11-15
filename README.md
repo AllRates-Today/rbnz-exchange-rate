@@ -31,7 +31,32 @@ Get a free API key at [allratestoday.com/register](https://allratestoday.com/reg
 The image is rendered live from the keyless endpoint, so it follows the central bank's publications on npm and on GitHub alike without a new release. The same table as text is folded below for search and copy-paste: on GitHub [a daily Action](.github/workflows/daily-table.yml) refreshes it whenever the central bank publishes a new table; on npm it is as of the package's publish date.
 
 <!-- daily-table:start -->
-_The table is filled in by the daily workflow._
+<details>
+<summary>Table as text: published 2026-11-13 by Reserve Bank of New Zealand — 17 rates. Updated 2026-11-15.</summary>
+
+| Base | Quote | Type | Rate |
+| --- | --- | --- | ---: |
+| NZD | AUD | reference | 0.81465 |
+| NZD | CAD | reference | 0.78995 |
+| NZD | CNY | reference | 3.6942 |
+| NZD | EUR | reference | 0.50115 |
+| NZD | GBP | reference | 0.41865 |
+| NZD | HKD | reference | 4.3454 |
+| NZD | IDR | reference | 10098.50975 |
+| NZD | INR | reference | 52.09485 |
+| NZD | JPY | reference | 88.5572 |
+| NZD | KRW | reference | 739.55105 |
+| NZD | MYR | reference | 2.2618 |
+| NZD | PHP | reference | 35.33925 |
+| NZD | SGD | reference | 0.7129 |
+| NZD | THB | reference | 18.78585 |
+| NZD | TWD | reference | 18.26345 |
+| NZD | USD | reference | 0.55395 |
+| NZD | VND | reference | 14225.43725 |
+
+</details>
+
+Source: [Official rates published by RBNZ, served by AllRatesToday](https://allratestoday.com/central-bank-rates-api/rbnz/). Rates are as printed by the central bank; AllRatesToday is not affiliated with it.
 <!-- daily-table:end -->
 
 ## 📦 Installation
